@@ -1,0 +1,295 @@
+body {
+    background: radial-gradient(circle,rgb(104, 104, 104) 40%, rgb(255, 255, 255) 95%);
+}
+
+/* titulo*/
+.text {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titu {
+    color: #000000;
+    font-family: Tahoma;
+    font-style: bold, italic;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.subt { 
+    color: #000000;   
+    text-align: center;
+}
+
+.subtex {
+    color: #000000;
+    text-align: center;
+}
+
+/* barra selectores */
+.caja-inicio{    
+    padding: 1rem;
+    display:grid;
+    grid-area: auto;
+    grid-template-columns: 23% 23% 23% 28%;
+    text-align: center;     
+    padding: 2rem;
+    height: 5rem;
+}
+
+#grises {
+    
+}
+
+#blur {
+    height: 25px;
+}
+
+#pagina {
+    height: 25px;
+}
+
+#cantidad {
+    height: 25px;
+}
+
+
+/* boton aceptar */
+div.center {
+    text-align: center;
+}
+
+#boton {
+    background-color: #9b9b9b; /* Green */
+    width: 90px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 10px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0 8px 5px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#boton:hover {
+    color: #000000;
+    font-size: 20px;
+}
+
+/* div contenedor */
+#contenido{
+    margin: 0 auto;
+    width: 94%;
+    display: grid;
+    padding: 15px;
+    grid-template-columns: repeat(4,1fr);
+    background-color: rgba(0, 0, 0, 0.356);
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    margin-bottom: 3rem;
+}
+
+/* cajas */ 
+.card {
+    float: left;
+    margin: 0.5%;
+    position: relative;
+    box-shadow: 1px 4px 5px rgba(0, 0, 0, .5);  
+}
+
+.btn1 {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-family: Tahoma;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 20px;
+    padding: 12px;
+    position: relative;  
+    left: 40rem;
+    bottom: 16rem;
+}
+
+.card {
+    border: none;
+}
+
+/* primer media 1020px */
+@media only screen and (max-width: 1020px){
+
+    /* barra selectores */
+    .caja-inicio{        
+        width: 100%;
+        height: 100%;  
+        padding: 1rem;
+        display:grid;
+        grid-area: 10rem;
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: 100% 100% 100%;
+        text-align: center;     
+        padding: 2rem;
+        height: 5rem;
+    }    
+
+    #pagina {
+        margin-top: 2rem;
+    }
+
+    #cantidad {
+        margin-top: 2rem;
+    }
+
+    /* boton aceptar */
+    #boton {
+        background-color: #9b9b9b; /* Green */
+        width: 90px;
+        height: 50px;
+        border: none;
+        border-radius: 15px;
+        color: white;
+        padding: 10px ;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 3rem;
+        cursor: pointer;
+        box-shadow: 0 8px 5px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    
+    #boton:hover {
+        color: #000000;
+        font-size: 20px;
+    }
+
+    /* div contenedor */
+    #contenido{
+        margin: 0 auto;
+        width: 94%;
+        display: grid;
+        padding: 15px;
+        grid-template-columns: repeat(3,1fr);
+        background-color: rgba(0, 0, 0, 0.356);
+        gap: 20px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+        margin-bottom: 3rem;
+    }
+}
+
+/* segunda media 630px */
+@media only screen and (max-width: 630px){
+
+    /* titulo*/
+    .text {
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titu {
+        color: #000000;
+        font-family: Tahoma;
+        font-style: bold, italic;
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .subt { 
+        color: #000000;   
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .subtex {
+        color: #000000;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    /* barra selectores */
+    .caja-inicio{
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;     
+        padding: 0.5rem;
+    }
+
+    #grises {
+        margin: 10px;
+    }
+
+    #blur {
+        margin: 10px;
+    }
+
+    #pagina {
+        margin: 10px;
+    }
+
+    #cantidad {
+        margin: 10px;
+    }
+
+    /* boton aceptar */
+    #boton {
+        background-color: #9b9b9b; /* Green */
+        width: 90px;
+        height: 50px;
+        border: none;
+        border-radius: 15px;
+        color: white;
+        padding: 10px ;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 8rem;
+        cursor: pointer;
+        box-shadow: 0 8px 5px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    
+    #boton:hover {
+        color: #000000;
+        font-size: 20px;
+    }
+
+    /* div contenedor */
+    #contenido{
+    margin: 0 auto;
+    width: 94%;
+    display: grid;
+    padding: 15px;
+    grid-template-columns: repeat(2,1fr);
+    background-color: rgba(0, 0, 0, 0.356);
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    margin-bottom: 3rem;
+    }
+}
+
+/* segunda media 630px */
+@media only screen and (max-width: 510px){
+
+    /* div contenedor */
+    #contenido{
+        margin: 0 auto;
+        width: 94%;
+        display: grid;
+        padding: 15px;
+        grid-template-columns: repeat(1,1fr);
+        background-color: rgba(0, 0, 0, 0.356);
+        gap: 20px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+        margin-bottom: 3rem;
+    }
+
+}
